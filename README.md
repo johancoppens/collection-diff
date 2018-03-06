@@ -1,6 +1,6 @@
 # collection-diff
 ## Description
-Finds differences in an array of objects (collections) by specifying a unique property
+Finds differences in two arrays of objects (collections) by specifying a unique property
 ## Installation
 From Github
 ```
