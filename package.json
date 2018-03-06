@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/johancoppens/collection-diff/issues"
   },
-  "homepage": "https://github.com/johancoppens/collection-diff#readme"
+  "homepage": "https://github.com/johancoppens/collection-diff#readme",
+  "dependencies": {
+    "deep-equal": "^1.0.1"
+  }
 }
