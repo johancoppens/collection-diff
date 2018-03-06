@@ -14,45 +14,45 @@ const util = require('util')
 const oldA = [
   {
     'id': '1',
-    'naam': 'one'
+    'name': 'one'
   },
   {
     'id': '2',
-    'naam': 'two REMOVED'
+    'name': 'two REMOVED'
   },
   {
     'id': '3',
-    'naam': 'three'
+    'name': 'three'
   },
   {
     'id': '4',
-    'naam': 'four'
+    'name': 'four'
   },
   {
     'id': '5',
-    'naam': 'five'
+    'name': 'five'
   }
 ]
 const newA = [
   {
     'id': '1',
-    'naam': 'one CHANGED'
+    'name': 'one CHANGED'
   },
   {
     'id': '3',
-    'naam': 'three'
+    'name': 'three'
   },
   {
     'id': '4',
-    'naam': 'four'
+    'name': 'four'
   },
   {
     'id': '5',
-    'naam': 'five CHANGED'
+    'name': 'five CHANGED'
   },
   {
     'id': '6',
-    'naam': 'six ADDED'
+    'name': 'six ADDED'
   }
 ]
 
@@ -65,24 +65,24 @@ Should output to the console
 ```javascript
 {
   added: [
-    { id: '6', naam: 'six ADDED' }
+    { id: '6', name: 'six ADDED' }
   ],
   removed: [
-    { id: '2', naam: 'two REMOVED' }
+    { id: '2', name: 'two REMOVED' }
   ],
   changed: [
     {
-      oldO: { id: '1', naam: 'one' },
-      newO: { id: '1', naam: 'one CHANGED' }
+      oldO: { id: '1', name: 'one' },
+      newO: { id: '1', name: 'one CHANGED' }
     },
     {
-      oldO: { id: '5', naam: 'five' },
-      newO: { id: '5', naam: 'five CHANGED' }
+      oldO: { id: '5', name: 'five' },
+      newO: { id: '5', name: 'five CHANGED' }
     }
   ],
   common: [
-    { id: '3', naam: 'three' },
-    { id: '4', naam: 'four' }
+    { id: '3', name: 'three' },
+    { id: '4', name: 'four' }
   ]
 }
 ```
