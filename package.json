@@ -18,5 +18,8 @@
   "homepage": "https://github.com/johancoppens/collection-diff#readme",
   "dependencies": {
     "deep-equal": "^1.0.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
   }
 }
