@@ -1,7 +1,7 @@
 {
   "name": "collection-diff",
   "version": "1.0.0",
-  "description": "Find diffs in array of objects",
+  "description": "Find diffs in two arrays of objects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
