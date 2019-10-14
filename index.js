@@ -1,7 +1,7 @@
 
 const eq = require('deep-equal')
 
-const diff = module.exports = (oldA, newA, uniqueProp) => {
+const diff = module.exports = (old, new, uniqueProp) => {
   // merge old and new on uniqueProp
   let union = {}
   // variable to store results
@@ -9,13 +9,13 @@ const diff = module.exports = (oldA, newA, uniqueProp) => {
     added: [],
     removed: [],
     changed: [],
-    common: []
+    equal: []
   }
-  oldA.forEach(el => {
+  old.forEach(el => {
     union[el[uniqueProp]] = {}
     union[el[uniqueProp]].oldEl = el
   })
-  newA.forEach(el => {
+  new.forEach(el => {
     if (!union[el[uniqueProp]]) { // unique prop already in union as key
       union[el[uniqueProp]] = {}
     }
@@ -31,7 +31,7 @@ const diff = module.exports = (oldA, newA, uniqueProp) => {
       }
     } else { // compare old and new
       if (eq(el.newEl, el.oldEl, true)) { // not changed
-        diffs.common.push(el.oldEl)
+        diffs.equal.push(el.oldEl)
       } else { // changed
         let change = {}
         change.oldO = el.oldEl
